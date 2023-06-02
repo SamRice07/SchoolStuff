@@ -1,0 +1,23 @@
+.ai-warning {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .ai-warning h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .ai-warning h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .ai-warning p {
+    font-size: 16px;
+    line-height: 1.5;
+  }

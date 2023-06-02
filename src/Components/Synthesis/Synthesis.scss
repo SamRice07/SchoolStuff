@@ -1,0 +1,25 @@
+.gatsbyWrapper {
+    background-color: #151515;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    height: 1400px;
+  }
+  
+  
+.gatsbyCard {
+    width: 1200px;
+    height: 1400px;
+    background-color: #313438;
+    z-index: 1;
+    box-shadow: 10px 50px 210px rgba(255, 255, 255, 0.2);
+}
+
+.slider {
+    position: relative;
+    top: 10%;
+}

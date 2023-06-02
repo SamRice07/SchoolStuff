@@ -1,0 +1,64 @@
+$bannerWidth: 15vh;
+$bannerHeight: 50vh;
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(ellipse farthest-corner at 50% 50%, rgba(33,6,12,1) 5%, rgba(0, 0, 0,1) 92%);
+}
+
+%full-banner {
+  height: $bannerHeight;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: $bannerWidth;
+}
+
+%full-container {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bg {
+    @extend %full-container;
+    background: url(https://www.the3rdsequence.com/texturedb/thumbnail/18/512/stone+wall.jpg);
+    background-position: 50% 0;
+    opacity: 0.375;
+  }
+
+.center {
+  @extend %full-container;
+  display: flex;
+  justify-content: center;
+  top: 5vh;
+  height: 95vh;
+  overflow: hidden;
+  opacity: 0.01;
+}
+
+.got-flag {
+  @extend %full-banner;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  top: 3vh;
+  
+  &__front {
+    @extend %full-banner;
+  }
+  
+  &__backface {
+    @extend %full-banner;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: 'FlipV';
+  }
+}
